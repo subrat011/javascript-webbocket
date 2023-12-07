@@ -70,3 +70,17 @@ const arrayObj = [
 console.log(arrayObj);
 console.log(arrayObj[3]);
 console.log(arrayObj[2]);
+
+//object de-structure
+
+const detailsOfCourse = {
+    courseName : "javascript",
+    courseFee :4000,
+    poweredBy :"web_bocket",
+    enrollmentStatus :"active"
+};
+console.log(detailsOfCourse);
+const{enrollmentStatus : es}=detailsOfCourse;
+const{CourseName  : cn}=detailsOfCourse;
+console.log(es);
+console.log(cn);
